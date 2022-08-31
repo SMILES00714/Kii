@@ -1,0 +1,6 @@
+usr/local/bin/kii-qt usr/bin
+share/pixmaps/kii32.xpm usr/share/pixmaps
+share/pixmaps/kii16.xpm usr/share/pixmaps
+share/pixmaps/kii128.png usr/share/pixmaps
+debian/kii-qt.desktop usr/share/applications
+debian/kii-qt.protocol usr/share/kde4/services/

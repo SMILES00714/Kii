@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/kii_ar.qm</file>
+        <file alias="bg">locale/kii_bg.qm</file>
+        <file alias="de">locale/kii_de.qm</file>
+        <file alias="en">locale/kii_en.qm</file>
+        <file alias="es">locale/kii_es.qm</file>
+        <file alias="fi">locale/kii_fi.qm</file>
+        <file alias="fr">locale/kii_fr.qm</file>
+        <file alias="it">locale/kii_it.qm</file>
+        <file alias="ja">locale/kii_ja.qm</file>
+        <file alias="ko">locale/kii_ko.qm</file>
+        <file alias="nl">locale/kii_nl.qm</file>
+        <file alias="pl">locale/kii_pl.qm</file>
+        <file alias="pt">locale/kii_pt.qm</file>
+        <file alias="ro">locale/kii_ro.qm</file>
+        <file alias="ru">locale/kii_ru.qm</file>
+        <file alias="sk">locale/kii_sk.qm</file>
+        <file alias="th">locale/kii_th.qm</file>
+        <file alias="tr">locale/kii_tr.qm</file>
+        <file alias="vi">locale/kii_vi.qm</file>
+        <file alias="zh_CN">locale/kii_zh_CN.qm</file>
+        <file alias="zh_TW">locale/kii_zh_TW.qm</file>
+    </qresource>
+</RCC>

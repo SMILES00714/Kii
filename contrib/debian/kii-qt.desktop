@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=KII Core
+Comment=KII P2P Cryptocurrency
+Comment[de]=Verbinde mit dem KII peer-to-peer Netzwerk
+Comment[fr]=KII, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=KII, eşten eşe kriptografik sanal para birimi
+Exec=kii-qt %u
+Terminal=false
+Type=Application
+Icon=kii128
+MimeType=x-scheme-handler/kii;
+Categories=Office;Finance;
+StartupWMClass=KII-qt

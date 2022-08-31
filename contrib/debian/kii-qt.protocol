@@ -1,0 +1,11 @@
+[Protocol]
+exec=kii-qt '%u'
+protocol=kii
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
