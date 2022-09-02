@@ -334,8 +334,8 @@ public:
         consensus.nMasternodePaymentsIncreasePeriod = 576*30; // 17280 - actual historical value
         consensus.nInstantSendConfirmationsRequired = 6;
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 1;
-        consensus.nBudgetPaymentsCycleBlocks = 43800;
+        consensus.nBudgetPaymentsStartBlock = 27594000;
+        consensus.nBudgetPaymentsCycleBlocks = 55188000;
         consensus.nBudgetPaymentsWindowBlocks = 100;
         consensus.nSuperblockStartBlock = 1; 
         consensus.nSuperblockStartHash = uint256();
