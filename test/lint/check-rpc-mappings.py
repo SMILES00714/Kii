@@ -18,7 +18,6 @@ SOURCES = [
     "src/rpc/mining.cpp",
     "src/rpc/misc.cpp",
     "src/rpc/net.cpp",
-    "src/rpc/coinjoin.cpp",
     "src/rpc/rawtransaction.cpp",
     "src/rpc/rpcevo.cpp",
     "src/rpc/rpcquorums.cpp",

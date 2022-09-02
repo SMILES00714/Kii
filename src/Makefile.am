@@ -362,7 +362,6 @@ libkii_server_a_SOURCES = \
   rpc/rpcevo.cpp \
   rpc/rpcquorums.cpp \
   rpc/server.cpp \
-  rpc/coinjoin.cpp \
   rpc/util.cpp \
   script/sigcache.cpp \
   spork.cpp \

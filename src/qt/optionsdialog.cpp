@@ -59,7 +59,7 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     ui->threadsScriptVerif->setMaximum(MAX_SCRIPTCHECK_THREADS);
 
     /* Wallet */
-    ui->coinJoinEnabled->setText(tr("Enable %1 features").arg("CoinJoin"));
+
 
     /* Network elements init */
 #ifndef USE_UPNP
@@ -88,11 +88,11 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     if (!enableWallet) {
         ui->stackedWidgetOptions->removeWidget(ui->pageWallet);
         ui->btnWallet->hide();
-        ui->stackedWidgetOptions->removeWidget(ui->pageCoinJoin);
-        ui->btnCoinJoin->hide();
+
+
     } else {
         pageButtons->addButton(ui->btnWallet, pageButtons->buttons().size());
-        pageButtons->addButton(ui->btnCoinJoin, pageButtons->buttons().size());
+
     }
     pageButtons->addButton(ui->btnNetwork, pageButtons->buttons().size());
     pageButtons->addButton(ui->btnDisplay, pageButtons->buttons().size());
@@ -196,8 +196,8 @@ void OptionsDialog::setModel(OptionsModel *_model)
         // If -enablecoinjoin was passed in on the command line, set the checkbox
         // to the value given via commandline and disable it (make it unclickable).
         if (strLabel.contains("-enablecoinjoin")) {
-            ui->coinJoinEnabled->setChecked(_model->node().coinJoinOptions().isEnabled());
-            ui->coinJoinEnabled->setEnabled(false);
+ 
+
         }
 #endif
 
@@ -227,16 +227,7 @@ void OptionsDialog::setModel(OptionsModel *_model)
     connect(ui->lang, SIGNAL(valueChanged()), this, SLOT(showRestartWarning()));
     connect(ui->thirdPartyTxUrls, SIGNAL(textChanged(const QString &)), this, SLOT(showRestartWarning()));
 
-    connect(ui->coinJoinEnabled, &QCheckBox::clicked, [=](bool fChecked) {
-#ifdef ENABLE_WALLET
-        model->node().coinJoinOptions().setEnabled(fChecked);
-#endif
-        updateCoinJoinVisibility();
-        if (_model != nullptr) {
-            _model->emitCoinJoinEnabledChanged();
-        }
-        updateWidth();
-    });
+
 
     updateCoinJoinVisibility();
 
@@ -245,7 +236,7 @@ void OptionsDialog::setModel(OptionsModel *_model)
     fCoinJoinEnabledPrev = model->node().coinJoinOptions().isEnabled();
     connect(this, &OptionsDialog::rejected, [=]() {
         if (fCoinJoinEnabledPrev != model->node().coinJoinOptions().isEnabled()) {
-            ui->coinJoinEnabled->click();
+
         }
     });
 #endif
@@ -262,18 +253,17 @@ void OptionsDialog::setMapper()
 #endif
     mapper->addMapping(ui->threadsScriptVerif, OptionsModel::ThreadsScriptVerif);
     mapper->addMapping(ui->databaseCache, OptionsModel::DatabaseCache);
-    mapper->addMapping(ui->coinJoinEnabled, OptionsModel::CoinJoinEnabled);
+
 
     /* Wallet */
     mapper->addMapping(ui->coinControlFeatures, OptionsModel::CoinControlFeatures);
     mapper->addMapping(ui->showMasternodesTab, OptionsModel::ShowMasternodesTab);
-    mapper->addMapping(ui->showAdvancedCJUI, OptionsModel::ShowAdvancedCJUI);
-    mapper->addMapping(ui->showCoinJoinPopups, OptionsModel::ShowCoinJoinPopups);
-    mapper->addMapping(ui->lowKeysWarning, OptionsModel::LowKeysWarning);
-    mapper->addMapping(ui->coinJoinMultiSession, OptionsModel::CoinJoinMultiSession);
+
+
+
+
     mapper->addMapping(ui->spendZeroConfChange, OptionsModel::SpendZeroConfChange);
-    mapper->addMapping(ui->coinJoinRounds, OptionsModel::CoinJoinRounds);
-    mapper->addMapping(ui->coinJoinAmount, OptionsModel::CoinJoinAmount);
+
 
     /* Network */
     mapper->addMapping(ui->mapPortUpnp, OptionsModel::MapPortUPnP);
@@ -443,7 +433,7 @@ void OptionsDialog::updateCoinJoinVisibility()
 #else
     bool fEnabled = false;
 #endif
-    ui->btnCoinJoin->setVisible(fEnabled);
+
     GUIUtil::updateButtonGroupShortcuts(pageButtons);
 }
 
