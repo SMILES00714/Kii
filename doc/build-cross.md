@@ -58,7 +58,7 @@ If you want to build the windows installer with `make deploy` you need [NSIS](ht
 
 Acquire the source in the usual way:
 
-    git clone https://github.com/kiipay/kii.git
+    git clone https://github.com/kiiglobal/kii.git
     cd kii
 
 ### Building for 64-bit Windows

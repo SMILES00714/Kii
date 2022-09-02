@@ -1,15 +1,16 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: KII Core
-Upstream-Contact: KII Core Group, Inc https://www.kii.org/team/
-Source: https://github.com/kiipay/kii
+Upstream-Contact: KII Core Group, Inc https://kii.global/
+Source: https://github.com/kiiglobal
 
 Files: *
 Copyright: 2009-2017, Bitcoin Core Developers,
-           2019-2020, KII Core Developers
+           2019-2020, Dash Core Developers,
+           2021-2022, KII Core Developers
 License: Expat
 Comment: The Bitcoin Core Developers encompasses the current developers listed on bitcoin.org,
          as well as the numerous contributors to the project. The KII Core Developers
-         encompasses the current developers listed on https://www.kii.org/team/, as well as
+         encompasses the current developers listed on https://kii.global/, as well as
          the numerous contributors to the project.
 
 Files: debian/*

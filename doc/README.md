@@ -1,7 +1,7 @@
 KII Core
 ==========
 
-This is the official reference wallet for KII digital currency and comprises the backbone of the KII peer-to-peer network. You can [download KII Core](https://www.kii.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for KII digital currency and comprises the backbone of the KII peer-to-peer network. You can [download KII Core](https://kii.global/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -24,12 +24,11 @@ Drag KII-Qt to your applications folder, and then run KII-Qt.
 
 ### Need Help?
 
-* See the [KII documentation](https://docs.kii.org)
+* See the [KII documentation](https://kii.global)
 for help and more information.
-* See the [KII Developer Documentation](https://kii-docs.github.io/) 
+* See the [KII Developer Documentation](https://github.com/kiiglobal/) 
 for technical specifications and implementation details.
-* Ask for help on [KII Nation Discord](http://kiichat.org)
-* Ask for help on the [KII Forum](https://kii.org/forum)
+* Ask for help on the [KII Forum](https://kii.global)
 
 Building
 ---------------------
@@ -59,8 +58,8 @@ The KII Core repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [KII Forum](https://kii.org/forum), in the Development & Technical Discussion board.
-* Discuss on [KII Nation Discord](http://kiichat.org)
+* Discuss on the [KII Forum](https://kii.global/), in the Development & Technical Discussion board.
+
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
